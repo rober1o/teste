@@ -1,47 +1,45 @@
-# 🩺 Sistema Embarcado de Detecção de Diabetes com TinyML no RP2040
+# [cite_start]🩺 Sistema Embarcado de Detecção de Diabetes com TinyML no RP2040 [cite: 10]
 
-## 🔗 Links e Detalhes do Projeto
+---
 
-| Item | Status | Link |
-| :--- | :--- | :--- |
-| **Repositório GitHub** | Código-fonte | [https://github.com/TorRLD/diabetes-detection.git](https://github.com/TorRLD/diabetes-detection.git) |
-| **Vídeo Demonstrativo** | Apresentação Técnica | [VideoApresentação-AprendizagemDeMaquina-Parte3.mp4](VideoApresentação-AprendizagemDeMaquina-Parte3.mp4) |
-| **Data de Conclusão** | - | 09/12/2025 |
-| **Polo** | - | Vitória da Conquista - BA |
+## 🔗 Link Demonstrativo
+
+| Item | Link |
+| :--- | :--- |
+| **Vídeo Demonstrativo** | [cite_start][VideoApresentação-AprendizagemDeMaquina-Parte3.mp4] [cite: 7] |
 
 ---
 
 ## 🎯 Objetivo Geral
 
-Desenvolver e validar um **dispositivo de auxílio diagnóstico** baseado em **Inteligência Artificial (TinyML)** na placa **BitDogLab**, capaz de inferir o risco de diabetes em tempo real. O sistema utiliza uma Rede Neural rodando localmente no microcontrolador **RP2040** e foi treinado com o dataset **Pima Indians Diabetes**.
-
+[cite_start]Desenvolver e validar um dispositivo de auxílio diagnóstico baseado em Inteligência Artificial (TinyML) na placa BitDogLab, capaz de inferir o risco de diabetes em tempo real através de uma Rede Neural, rodando localmente no microcontrolador RP2040, utilizando o dataset Pima Indians Diabetes[cite: 12].
 
 
 ---
 
-## ⚙️ Descrição Funcional
+## [cite_start]⚙️ Descrição Funcional [cite: 13, 14]
 
-O funcionamento do sistema é dividido em duas etapas principais: **Treinamento** (offline) e **Inferência** (no dispositivo).
+O funcionamento do sistema é dividido em treinamento e inferência:
 
 ### 1. Treinamento e Pré-processamento (Python)
 
-* **Modelo:** A rede neural foi treinada em Python para classificar o risco com base em 8 variáveis clínicas (gravidez, glicose, pressão, pele, insulina, IMC, histórico e idade).
-* **Preparação de Dados:** O código implementa uma lógica de **imputação de dados** (substituição de valores ausentes pela média) e **normalização MinMax rigorosa**.
+* [cite_start]**Modelo:** O modelo foi treinado em Python para classificar o risco com base em 8 variáveis clínicas (gravidez, glicose, pressão, pele, insulina, IMC, histórico e idade)[cite: 15].
+* [cite_start]**Preparação de Dados:** O código implementa uma lógica de imputação de dados (substituição de valores ausentes pela média) e normalização MinMax rigorosa[cite: 16].
 
 ### 2. Inferência na BitDogLab (Firmware RP2040)
 
-* **Entrada de Dados:** O usuário insere os dados clínicos via Monitor Serial.
-* **Execução da IA:** O firmware processa essas entradas e executa o modelo **TensorFlow Lite for Microcontrollers**.
-* **Saída e Feedback:** O sistema retorna a probabilidade percentual da doença e classifica o resultado como **"Normal"** ou **"Risco Detectado"**.
+* [cite_start]**Entrada de Dados:** O usuário insere os dados clínicos via Monitor Serial[cite: 17].
+* [cite_start]**Execução da IA:** O firmware processa essas entradas e executa o modelo TensorFlow Lite for Microcontrollers[cite: 18].
+* [cite_start]**Saída e Feedback:** O sistema retorna a probabilidade percentual da doença e classifica o resultado como "Normal" ou "Risco Detectado"[cite: 19].
 
 ---
 
-## 💻 Como Clonar o Repositório
+## 💻 Como Clonar e Configurar
 
-Para obter uma cópia local funcional para desenvolvimento e testes, siga os passos abaixo:
+### 1. Clonar o Repositório
 
-1.  **Pré-requisitos:** Certifique-se de ter o Git instalado em sua máquina.
-2.  **Clonar:** Abra seu terminal ou prompt de comando e execute o seguinte comando:
+Para obter o código-fonte, utilize o comando `git clone` e acesse o diretório do projeto:
 
 ```bash
-git clone [https://github.com/TorRLD/diabetes-detection.git](https://github.com/TorRLD/diabetes-detection.git)
+git clone [https://github.com/TorRLD/diabetes-detection.git](https://github.com/TorRLD/diabetes-detection.git) 
+cd diabetes-detection
