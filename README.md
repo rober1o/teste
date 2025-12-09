@@ -6,7 +6,7 @@
 
 | Item | Link |
 | :--- | :--- |
-| **Vídeo Demonstrativo** | [VideoApresentação-AprendizagemDeMaquina-Parte3.mp4] |
+| **(Vídeo Demonstrativo)** | [VideoApresentação-AprendizagemDeMaquina-Parte3.mp4] |
 
 ---
 
@@ -17,7 +17,7 @@ Desenvolver e validar um dispositivo de auxílio diagnóstico baseado em Intelig
 
 ---
 
-## ⚙️ Descrição Funcional [cite: 13, 14]
+## ⚙️ Descrição Funcional
 
 O funcionamento do sistema é dividido em treinamento e inferência:
 
